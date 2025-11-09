@@ -27,7 +27,7 @@ foreach ($emails as $email) {
         $mail->Port = 587;
 
         // Expéditeur et destinataire
-        $mail->setFrom('riberac.webmaker@gmail.com', 'WebSiteMaker');
+        $mail->setFrom('Votre mail', 'Votre Nom');
         $mail->addAddress($email);
 
         // Contenu HTML
@@ -51,3 +51,4 @@ foreach ($emails as $email) {
     }
 
 }
+
