@@ -9,8 +9,8 @@ require 'phpmailer/Exception.php';
 
 // Tableau des emails
 $emails = [
-    'psylothc@gmail.com',
-    'riwal.prodhomme@gmail.com'
+    'greystormwebmaster@gmail.com',
+    'riberac.webmaker@gmail.com'
 ];
 
 // Boucle pour envoyer à chacun
@@ -21,8 +21,8 @@ foreach ($emails as $email) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'riberac.webmaker@gmail.com';
-        $mail->Password = 'hwfy xrsg wjdp zkzy';
+        $mail->Username = 'ton-email@gmail.com';
+        $mail->Password = 'ton-mot-de-passe-app';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
@@ -49,4 +49,5 @@ foreach ($emails as $email) {
     } catch (Exception $e) {
         echo "❌ Échec pour $email : {$mail->ErrorInfo}<br>";
     }
+
 }
